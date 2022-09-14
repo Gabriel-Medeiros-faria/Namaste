@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Namastê</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topo">
+            <div class="itens-topo">
+                <h1>Namastê</h1>
+                <h2>Sua comida em 6 minutos</h2>
+            </div>
+        </div>
+        <div class="todos-os-itens">
+            <p>Primeiro, seu prato</p>
+            <div class="pratos">
+
+                <div class="caixa-pratos0 indentificador-pratos" onclick="selecionado('.caixa-pratos0')">
+                    <div class="caixinha-pratos">
+
+                        <img src="./imagens/proibido-e1452453209413.png" class="img1" alt="">
+                        <h3>Nada</h3>
+                        <br>
+                        <h4>Não quero nada dessa coluna
+                        </h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 00,00</span><span class="check escondido"
+                                onclick="checkBebidas('.verificado5')"><img src="./imagens/Vector.png"></span></h5>
+
+
+                    </div>
+                </div>
+
+                <div class="caixa-pratos1 indentificador-pratos" onclick="selecionado('.caixa-pratos1')">
+                    <div class="caixinha-pratos">
+
+                        <img src="./imagens/comidas-tipicas-capa2019.jpg" class="img1" alt="">
+                        <h3>Feijoada</h3>
+                        <br>
+                        <h4>Feijoada, com salada e arroz
+                        </h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 14,90</span><span class="check escondido"
+                                onclick="checkBebidas('.verificado5')"><img src="./imagens/Vector.png"></span></h5>
+
+
+                    </div>
+                </div>
+
+
+                <div class="caixa-pratos2 indentificador-pratos " onclick="selecionado('.caixa-pratos2')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/camarão.jpg" class="img1" alt="">
+                        <h3>Camarão bahiano</h3>
+                        <br>
+                        <h4>O petisco mais amado do Brasil</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 15,50</span><span class="check escondido"
+                                onclick="checkBebidas('.verificado5')"><img src="./imagens/Vector.png"></span></h5>
+
+
+                    </div>
+                </div>
+
+                <div class="caixa-pratos3 indentificador-pratos" onclick="selecionado('.caixa-pratos3')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/coxinha.jpg" class="img1" alt="">
+                        <h3>Coxinha</h3>
+                        <br>
+                        <h4>Coxinha de frango com catupirí</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 5,50</span><span class="check escondido"
+                                onclick="checkBebidas('.verificado5')"><img src="./imagens/Vector.png"></span></h5>
+
+                    </div>
+                </div>
+                <div class="caixa-pratos4 indentificador-pratos" onclick="selecionado('.caixa-pratos4')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/hamburger de sirí.jpg" class="img1" alt="">
+                        <h3>Hamburger de sirí</h3>
+                        <br>
+                        <h4>Melhor hamburger feito no mundo</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 16,50</span><span class="check escondido"
+                                onclick="checkBebidas('.verificado5')"><img src="./imagens/Vector.png"></span></h5>
+
+                    </div>
+                </div>
+            </div>
+            <p>Agora, sua bebida</p>
+            <div class="bebidas">
+                <div class="caixa-bebidas0 indentificador-bebidas" onclick="selecionadoBebidas('.caixa-bebidas0')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/proibido-e1452453209413.png" class="img1" alt="">
+                        <h3>Nada</h3>
+                        <br>
+                        <h4>Não quero nada dessa coluna</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 00,00</span><span class="check2 escondido"
+                                onclick="checkBebidas('.verificado5')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+
+                <div class="caixa-bebidas1 indentificador-bebidas" onclick="selecionadoBebidas('.caixa-bebidas1')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/Drink.jpg" class="img1" alt="">
+                        <h3>Drinks diversos</h3>
+                        <br>
+                        <h4>Escolha qualquer drink </h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 20,00</span><span class="check2 escondido"
+                                onclick="checkBebidas('.verificado5')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+                <div class="caixa-bebidas2 indentificador-bebidas" onclick="selecionadoBebidas('.caixa-bebidas2')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/coca.jpg" class="img1" alt="">
+                        <h3>Coca-cola</h3>
+                        <br>
+                        <h4>hmmm, coquinha gelada</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 6,00</span><span class="check2 escondido"
+                                onclick="checkBebidas('.verificado6')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+                <div class="caixa-bebidas3 indentificador-bebidas" onclick="selecionadoBebidas('.caixa-bebidas3')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/ousadia.jpg" class="img1" alt="">
+                        <h3>Ousadia</h3>
+                        <br>
+                        <h4>Famosa mata fraco, beba mais de uma</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 8,00</span><span class="check2 escondido"
+                                onclick="checkBebidas('.verificado7')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+                <div class="caixa-bebidas4 indentificador-bebidas" onclick="selecionadoBebidas('.caixa-bebidas4')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/uva.jpg" class="img1" alt="">
+                        <h3>Fanta uva</h3>
+                        <br>
+                        <h4>Melhor bebida ja existente</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero">5,00</span><span class="check2 escondido"
+                                onclick="checkBebidas('.verificado8')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+            </div>
+            <p>Por fim, sua sobremesa</p>
+            <div class="sobremesa">
+                <div class="caixa-sobremesa0 indentificador-sobremesa"
+                    onclick="selecionadoSobremesas('.caixa-sobremesa0')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/proibido-e1452453209413.png" class="img1" alt="">
+                        <h3>Nada</h3>
+                        <br>
+                        <h4>Não quero nada dessa coluna</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 00,00</span><span class="check3 escondido"
+                                onclick="checkSobremesas('.verificado9')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+
+                <div class="caixa-sobremesa1 indentificador-sobremesa"
+                    onclick="selecionadoSobremesas('.caixa-sobremesa1')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/pavê.jpg" class="img1" alt="">
+                        <h3>Pavê com morango</h3>
+                        <br>
+                        <h4>Pavê de creme com morango</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 15,00</span><span class="check3 escondido"
+                                onclick="checkSobremesas('.verificado9')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+                <div class="caixa-sobremesa2 indentificador-sobremesa"
+                    onclick="selecionadoSobremesas('.caixa-sobremesa2')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/copo da felicidade.jpg" class="img1" alt="">
+                        <h3>Copo da felicidade</h3>
+                        <br>
+                        <h4>Copo com tudo o que há de bom</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 10,00</span><span class="check3 escondido"
+                                onclick="checkSobremesas('.verificado10')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+                <div class="caixa-sobremesa3 indentificador-sobremesa"
+                    onclick="selecionadoSobremesas('.caixa-sobremesa3')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/torta de morango.jpg" class="img1" alt="">
+                        <h3>Torta de morango</h3>
+                        <br>
+                        <h4>hmmm, torta de murango</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 13,00</span><span class="check3 escondido"
+                                onclick="checkSobremesas('.verificado11')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+                <div class="caixa-sobremesa4 indentificador-sobremesa"
+                    onclick="selecionadoSobremesas('.caixa-sobremesa4')">
+                    <div class="caixinha-pratos">
+                        <img src="./imagens/mousse.jpg" class="img1" alt="">
+                        <h3>Mousse de cacau</h3>
+                        <br>
+                        <h4>Mousse com maior % de cacau</h4>
+                        <br>
+                        <h5>R$<span class="preco-numero"> 11,00</span><span class="check3 escondido"
+                                onclick="checkSobremesas('.verificado12')"><img src="./imagens/Vector.png"></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="barra-horizontal">
+            <div class="background-dentro" onclick="botaoLigado()">
+                <h6>Selecione os 3 itens para fechar o pedido</h6>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
