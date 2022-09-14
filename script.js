@@ -23,9 +23,11 @@ function botaoAtivado() {
         return true
     }
 }
+
 function botaoLigado() {
         const nomePessoa = prompt("Digite seu nome")
         const local = prompt("Digite o local de entrega")
+
         if(nomePessoa !== null && local!== null){
             const primeiro_elemento = document.querySelector(".pratos .selecionado")
         item1_nome=primeiro_elemento.getElementsByTagName("h3")[0]
@@ -58,7 +60,7 @@ function botaoLigado() {
         `
         
         
-         
+        
         let uri = encodeURIComponent(mensagem)
         window.open( 'https://wa.me/5512992545942?text='+uri)
     
@@ -71,11 +73,17 @@ function botaoLigado() {
 function selecionado(classPedido) {
     const pratoSelecionado = document.querySelector('.pratos .selecionado');
 
+    if (pratoSelecionado !== null) {
+        const check = document.querySelector(".selecionado .check");
+        check.classList.add('escondido')
+        pratoSelecionado.classList.remove('selecionado')
+    }
+
     const selecionado = document.querySelector(classPedido)
-    selecionado.classList.toggle('selecionado')
+    selecionado.classList.add('selecionado')
 
     const check = document.querySelector(`${classPedido} .caixinha-pratos .check`)
-    check.classList.toggle('escondido')
+    check.classList.remove('escondido')
 
     botaoAtivado()
 }
@@ -84,11 +92,17 @@ function selecionado(classPedido) {
 function selecionadoBebidas(classPedido) {
     const pratoSelecionado = document.querySelector('.bebidas .selecionado');
 
+    if (pratoSelecionado !== null) {
+        const check = document.querySelector(".selecionado .check2");
+        check.classList.add('escondido')
+        pratoSelecionado.classList.remove('selecionado')
+    }
+
     const selecionado = document.querySelector(classPedido)
-    selecionado.classList.toggle('selecionado')
+    selecionado.classList.add('selecionado')
 
     const check = document.querySelector(`${classPedido} .caixinha-pratos .check2`)
-    check.classList.toggle('escondido')
+    check.classList.remove('escondido')
 
     botaoAtivado()
 }
@@ -97,11 +111,17 @@ function selecionadoBebidas(classPedido) {
 function selecionadoSobremesas(classPedido) {
     const pratoSelecionado = document.querySelector('.sobremesa .selecionado');
 
+    if (pratoSelecionado !== null) {
+        const check = document.querySelector(".selecionado .check3");
+        check.classList.add('escondido')
+        pratoSelecionado.classList.remove('selecionado')
+    }
+
     const selecionado = document.querySelector(classPedido)
-    selecionado.classList.toggle('selecionado')
+    selecionado.classList.add('selecionado')
 
     const check = document.querySelector(`${classPedido} .caixinha-pratos .check3`)
-    check.classList.toggle('escondido')
+    check.classList.remove('escondido')
 
     botaoAtivado()
 }
